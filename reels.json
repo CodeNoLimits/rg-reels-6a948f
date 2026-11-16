@@ -114,6 +114,127 @@
    "legende": "De la cuisine à ta table, servi chaud. Un vrai bistro parisien au cœur de Jérusalem.",
    "code": "RG-16",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_fr.ok"
+  },
+  {
+   "titre": "Salade betterave et roquette",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_betterave.jpg"
+   ],
+   "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
+   "code": "RG-17",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/betterave.ok"
+  },
+  {
+   "titre": "Planche brunch",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_brunch.jpg"
+   ],
+   "legende": "ארוחה טובה מתחילה בצלחת יפה. נתראה אצלנו. קפה ביסטרו רומן גארי, הלל 35",
+   "code": "RG-18",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/brunch.ok"
+  },
+  {
+   "titre": "Carpaccio de saumon",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_carpaccio_saumon.jpg"
+   ],
+   "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
+   "code": "RG-19",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_saumon.ok"
+  },
+  {
+   "titre": "Carpaccio de thon",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_carpaccio_thon.jpg"
+   ],
+   "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
+   "code": "RG-20",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_thon.ok"
+  },
+  {
+   "titre": "Salade César",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_cesar.jpg"
+   ],
+   "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
+   "code": "RG-21",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/cesar.ok"
+  },
+  {
+   "titre": "Plateau de fromages",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_fromages.jpg"
+   ],
+   "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
+   "code": "RG-22",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/fromages.ok"
+  },
+  {
+   "titre": "Salade grecque",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_grecque.jpg"
+   ],
+   "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
+   "code": "RG-23",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/grecque.ok"
+  },
+  {
+   "titre": "Légumes grillés",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_legumes.jpg"
+   ],
+   "legende": "ארוחה טובה מתחילה בצלחת יפה. נתראה אצלנו. קפה ביסטרו רומן גארי, הלל 35",
+   "code": "RG-24",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/legumes.ok"
+  },
+  {
+   "titre": "Salade niçoise",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_nicoise.jpg"
+   ],
+   "legende": "ערב קריר, צלחת חמה. מחכים לכם. קפה ביסטרו רומן גארי, כשר למהדרין",
+   "code": "RG-25",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/nicoise.ok"
+  },
+  {
+   "titre": "Pavé de saumon",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_saumon.jpg"
+   ],
+   "legende": "ערב קריר, צלחת חמה. מחכים לכם. קפה ביסטרו רומן גארי, כשר למהדרין",
+   "code": "RG-26",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/saumon.ok"
+  },
+  {
+   "titre": "Assiette tomate, œuf, avocat",
+   "langue": "he",
+   "type": "post",
+   "images": [
+    "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_tomate_oeuf.jpg"
+   ],
+   "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
+   "code": "RG-27",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/tomate_oeuf.ok"
   }
  ]
 }

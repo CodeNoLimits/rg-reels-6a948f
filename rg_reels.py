@@ -12,7 +12,7 @@ import json, os, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 H = Path(__file__).parent; MAN = H / 'reels.json'; RG = Path.home() / 'Projects/02-clients/romain-gary-institut'
 IG = RG / 'INSTAGRAM_2026-11-12'; LOG = H / 'rg_reels.log'
-SRC = [RG / 'REELS_CUISINE_2026-11-16']  # 16/11 : Uzi ne veut plus de reggae sur son fil → la source reggae est coupée
+SRC = [RG / 'REELS_CUISINE_2026-11-16', RG / 'PHOTOS_UZI_2026-11-16/posts']  # 16/11 : Uzi ne veut plus de reggae sur son fil → la source reggae est coupée
 UZI = {'152196528271428@lid'}; DAVID = '972584921492@s.whatsapp.net'; DAVID_JIDS = {DAVID, '149684039512207@lid'}
 URL = 'https://uzi.dreamnovamcp.com/oI1NZFp79eCet5JG/'  # page MCP : le bouton מאשר publie directement
 TAGS = {'he': '#ירושלים #כשר #ביסטרו #רומןגארי #אוכלכשר #מסעדהכשרה',
@@ -70,6 +70,7 @@ def ajouter(m):
                 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', '2', '-i', str(tel), '-frames:v', '1', '-vf', 'scale=540:-2', '-q:v', '4', str(H / 'v' / f'{code}.jpg')], check=True)
             else:
                 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', e['images'][0], '-vf', 'scale=540:-2', '-q:v', '4', str(H / 'v' / f'{code}.jpg')], check=True)
+                shutil.copy(e['images'][0], H / 'v' / f'{code}_full.jpg')  # pleine résolution pour Instagram
             m['reels'].append(e); neufs.append(e); log(f'ajouté {code} {e["titre"]}')
     if neufs:
         save(m); build_page(m)
@@ -92,15 +93,40 @@ def valider(m):
     st.write_text(json.dumps(sorted(vu)))
     for c in dict.fromkeys(codes): publier(m, c, 'WhatsApp')
 
+def publier_photo(e, cap, c):
+    sys.path.insert(0, str(RG / 'META_HAPPENINGS_2026-10-19/meta')); import rcdp
+    def call(p, path, method, params):  # copie exacte de publier_photos.py (prouvé le 12/11)
+        return rcdp.js(p, """(async()=>{const ut=%s; if(!ut) return {error:'NO_TOKEN'};
+      const fd=new URLSearchParams(%s); fd.append('access_token', ut);
+      const u='https://adsmanager-graph.facebook.com/v22.0/'+%s;
+      const r=%s==='GET'? await fetch(u+'?'+fd.toString(),{credentials:'include'}) : await fetch(u,{method:'POST',body:fd,credentials:'include'});
+      return r.json()})()""" % (rcdp.TOKJS, json.dumps(params), json.dumps(path), json.dumps(method)), timeout=180)
+    rcdp.ACT = '4540229626215746'; p = rcdp.tab(); igid = '17841417548128779'
+    who = call(p, igid, 'GET', {'fields': 'username'}); assert who.get('username') == 'romain.gary.cafe.bistro', who
+    url = URL + f'v/{c}_full.jpg'
+    r = call(p, f'{igid}/media', 'POST', {'image_url': url, 'caption': cap})
+    if 'id' not in r: log(f'photo {c} conteneur KO {r}'); return None
+    for _ in range(30):
+        s = call(p, r['id'], 'GET', {'fields': 'status_code'}).get('status_code')
+        if s in ('FINISHED', 'ERROR', 'EXPIRED'): break
+        time.sleep(5)
+    if s != 'FINISHED': log(f'photo {c} traitement {s}'); return None
+    mm = call(p, f'{igid}/media_publish', 'POST', {'creation_id': r['id']})
+    if 'id' not in mm: log(f'photo {c} publication KO {mm}'); return None
+    perm = call(p, mm['id'], 'GET', {'fields': 'permalink'}).get('permalink', '')
+    return re.sub(r'^https://www\.instagram\.com', '', perm) or None
+
 def publier(m, c, source):
     """Publie le livrable <c> (une seule fois), pose et relit la légende, prévient David. Renvoie le lien ou None."""
     e = next((x for x in m['reels'] if x['code'] == c), None)
     if not e: return None
     if e.get('lien'): return e['lien']
     lf = H / f'leg_{c}.txt'; lf.write_text(legende(e), encoding='utf-8')
-    f = e['complet'] if e['type'] == 'reel' else e['images'][0]
-    r = subprocess.run([sys.executable, str(IG / 'publier_reel.py'), f'uzi_{c}', f, str(lf)], capture_output=True, text=True, timeout=900, cwd=IG)
-    lien = (re.search(r'(/romain\.gary\.cafe\.bistro/(?:reel|p)/[^/\s]+/)', r.stdout) or [None, None])[1]
+    if e['type'] == 'post':  # photo : API officielle d'Instagram (méthode de publier_photos.py, prouvée le 12/11)
+        lien = publier_photo(e, legende(e), c); r = subprocess.CompletedProcess([], 0, '', '')
+    else:
+        r = subprocess.run([sys.executable, str(IG / 'publier_reel.py'), f'uzi_{c}', e['complet'], str(lf)], capture_output=True, text=True, timeout=900, cwd=IG)
+        lien = (re.search(r'(/romain\.gary\.cafe\.bistro/(?:reel|p)/[^/\s]+/)', r.stdout) or [None, None])[1]
     if not lien:
         log(f'publication {c} échouée : {r.stdout[-300:]} {r.stderr[-300:]}'); wa(DAVID, f'⚠️ Publication {c} échouée ({source}), je regarde.'); return None
     p2 = subprocess.run([sys.executable, str(IG / 'poser_legende.py'), 'https://www.instagram.com' + lien, str(lf)], capture_output=True, text=True, timeout=600, cwd=IG)
