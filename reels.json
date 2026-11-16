@@ -52,7 +52,7 @@
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_he.mp4",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_he_tel.mp4",
    "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
-   "code": "RG-05",
+   "code": "RG-10",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_he.ok"
   },
   {
@@ -62,7 +62,7 @@
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he.mp4",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he_tel.mp4",
    "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
-   "code": "RG-06",
+   "code": "RG-11",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he.ok"
   },
   {
@@ -72,7 +72,7 @@
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_en.mp4",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_en_tel.mp4",
    "legende": "Your next break is right here: a real Parisian bistro in the heart of Jerusalem.",
-   "code": "RG-07",
+   "code": "RG-12",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_en.ok"
   },
   {
@@ -82,7 +82,7 @@
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_fr.mp4",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_fr_tel.mp4",
    "legende": "Ta prochaine pause, c’est ici : un vrai bistro parisien au cœur de Jérusalem.",
-   "code": "RG-08",
+   "code": "RG-13",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_fr.ok"
   },
   {
@@ -92,8 +92,28 @@
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_he.mp4",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_he_tel.mp4",
    "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
-   "code": "RG-09",
+   "code": "RG-14",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel3_PauseHillel35_he.ok"
+  },
+  {
+   "titre": "Cuisine · Du passe à la table",
+   "langue": "en",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_en.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_en_tel.mp4",
+   "legende": "From our kitchen to your table, served hot. A real Parisian bistro in the heart of Jerusalem.",
+   "code": "RG-15",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_en.ok"
+  },
+  {
+   "titre": "Cuisine · Du passe à la table",
+   "langue": "fr",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_fr.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_fr_tel.mp4",
+   "legende": "De la cuisine à ta table, servi chaud. Un vrai bistro parisien au cœur de Jérusalem.",
+   "code": "RG-16",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_fr.ok"
   }
  ]
 }

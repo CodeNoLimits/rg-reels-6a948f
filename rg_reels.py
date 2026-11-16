@@ -63,7 +63,7 @@ def ajouter(m):
             if str(ok) in vus: continue
             try: e = json.loads(ok.read_text().strip().splitlines()[0])
             except Exception as x: log(f'marqueur illisible {ok}: {x}'); continue
-            code = f"RG-{len(m['reels']) + 1:02d}"; e.update(code=code, marqueur=str(ok), type=e.get('type', 'reel'))
+            code = f"RG-{max([int(x['code'][3:]) for x in m['reels'] if 'code' in x] + [0]) + 1:02d}"; e.update(code=code, marqueur=str(ok), type=e.get('type', 'reel'))  # max et non len() : un retrait de la liste recréait des codes déjà pris (bug du 16/11)
             if e['type'] == 'reel':
                 tel = Path(e['tel']); assert tel.exists() and tel.stat().st_size < 30e6, tel
                 shutil.copy(tel, H / 'v' / f'{code}.mp4')
