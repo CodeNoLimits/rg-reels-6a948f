@@ -63,7 +63,10 @@
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he_tel.mp4",
    "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
    "code": "RG-11",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel2_DuPasseALaTable_he.ok",
+   "lien": "/romain.gary.cafe.bistro/reel/Df0VoAFvG20/",
+   "legende_ok": true,
+   "valide_par": "GO David 16/11 23:40 (reels wow, hébreu)"
   },
   {
    "titre": "Cuisine · Ta pause à Hillel 35",
@@ -135,7 +138,9 @@
    ],
    "legende": "ארוחה טובה מתחילה בצלחת יפה. נתראה אצלנו. קפה ביסטרו רומן גארי, הלל 35",
    "code": "RG-18",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/brunch.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/brunch.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:19:38 (web, GO David)"
   },
   {
    "titre": "Carpaccio de saumon",
@@ -146,7 +151,9 @@
    ],
    "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
    "code": "RG-19",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_saumon.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_saumon.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:21:55 (web, GO David)"
   },
   {
    "titre": "Carpaccio de thon",
@@ -155,9 +162,11 @@
    "images": [
     "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_carpaccio_thon.jpg"
    ],
-   "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
+   "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
    "code": "RG-20",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_thon.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/carpaccio_thon.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:18:22 (web, GO David)"
   },
   {
    "titre": "Salade César",
@@ -168,7 +177,9 @@
    ],
    "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
    "code": "RG-21",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/cesar.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/cesar.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:17:04 (web, GO David)"
   },
   {
    "titre": "Plateau de fromages",
@@ -190,7 +201,9 @@
    ],
    "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
    "code": "RG-23",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/grecque.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/grecque.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:20:47 (web, GO David)"
   },
   {
    "titre": "Légumes grillés",
@@ -199,9 +212,11 @@
    "images": [
     "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/post_legumes.jpg"
    ],
-   "legende": "ארוחה טובה מתחילה בצלחת יפה. נתראה אצלנו. קפה ביסטרו רומן גארי, הלל 35",
+   "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
    "code": "RG-24",
-   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/legumes.ok"
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/legumes.ok",
+   "lien": "/romain.gary.cafe.bistro/",
+   "publie": "2026-11-16 23:23:04 (web, GO David)"
   },
   {
    "titre": "Salade niçoise",
