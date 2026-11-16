@@ -253,6 +253,19 @@
    "legende": "הצלחת שמחכה לך אצלנו. ביסטרו פריזאי בלב ירושלים, כשר למהדרין. קפה ביסטרו רומן גארי, הלל 35",
    "code": "RG-27",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/PHOTOS_UZI_2026-11-16/posts/tomate_oeuf.ok"
+  },
+  {
+   "titre": "Nouveaux plats · חדש בתפריט",
+   "langue": "he",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_NOUVEAUX_PLATS_2026-11-16/RomainGary_ReelA_NouveauxPlats_he.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_NOUVEAUX_PLATS_2026-11-16/RomainGary_ReelA_NouveauxPlats_he_tel.mp4",
+   "legende": "טעם של פריז בלב ירושלים. בואו לשבת אצלנו. קפה ביסטרו רומן גארי, כשר למהדרין",
+   "legende_ok": true,
+   "valide_par": "GO David 16/11 (nouveaux plats)",
+   "code": "RG-28",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_NOUVEAUX_PLATS_2026-11-16/ReelA_manuel",
+   "lien": "/romain.gary.cafe.bistro/reel/Df0XJYEvW8S/"
   }
  ]
 }
