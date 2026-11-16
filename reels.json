@@ -2,7 +2,7 @@
  "reels": [
   {
    "code": "RG-01",
-   "titre": "Reggae",
+   "titre": "Reggae v1",
    "langue": "he",
    "type": "reel",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_he_tel.mp4",
@@ -14,7 +14,7 @@
   },
   {
    "code": "RG-02",
-   "titre": "Reggae",
+   "titre": "Reggae v1",
    "langue": "fr",
    "type": "reel",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_fr_tel.mp4",
@@ -24,7 +24,7 @@
   },
   {
    "code": "RG-03",
-   "titre": "Cuisine",
+   "titre": "Cuisine v1",
    "langue": "he",
    "type": "reel",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_he_tel.mp4",
@@ -36,13 +36,43 @@
   },
   {
    "code": "RG-04",
-   "titre": "Cuisine",
+   "titre": "Cuisine v1",
    "langue": "fr",
    "type": "reel",
    "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_fr_tel.mp4",
    "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_RomainGary_fr_9x16.mp4",
    "legende": "Servi chaud, de la cuisine à ta table.",
    "marqueur": "initial"
+  },
+  {
+   "titre": "Cuisine · Le menu en 15 s",
+   "langue": "en",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_en.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_en_tel.mp4",
+   "legende": "Our menu in 15 seconds. Which one would you try first?",
+   "code": "RG-05",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_en.ok"
+  },
+  {
+   "titre": "Cuisine · Le menu en 15 s",
+   "langue": "fr",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_fr.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_fr_tel.mp4",
+   "legende": "Le menu en 15 secondes. Lequel tu goûtes en premier ?",
+   "code": "RG-06",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REELS_CUISINE_2026-11-16/RomainGary_Reel1_Menu15s_fr.ok"
+  },
+  {
+   "titre": "Reggae v2 · DJ et ambiance",
+   "langue": "he",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_he_9x16.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_he_tel.mp4",
+   "legende": "ערב רגאיי ברומן גארי",
+   "code": "RG-07",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_he.ok"
   }
  ]
 }

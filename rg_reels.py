@@ -14,7 +14,7 @@ H = Path(__file__).parent; MAN = H / 'reels.json'; RG = Path.home() / 'Projects/
 IG = RG / 'INSTAGRAM_2026-11-12'; LOG = H / 'rg_reels.log'
 SRC = [RG / 'REELS_CUISINE_2026-11-16', RG / 'REGGAE_2026-11-14/rendus_v2']
 UZI = {'152196528271428@lid'}; DAVID = '972584921492@s.whatsapp.net'; DAVID_JIDS = {DAVID, '149684039512207@lid'}
-URL = 'https://codenolimits.github.io/rg-reels-6a948f/'
+URL = 'https://uzi.dreamnovamcp.com/oI1NZFp79eCet5JG/'  # page MCP : le bouton מאשר publie directement
 TAGS = {'he': '#ירושלים #כשר #ביסטרו #רומןגארי #אוכלכשר #מסעדהכשרה',
         'fr': '#jerusalem #bistrot #cuisinefrancaise #casher #romaingary #jerusalemfood',
         'en': '#jerusalem #kosher #frenchbistro #jerusalemfood #kosherfood #romaingary'}
@@ -90,21 +90,25 @@ def valider(m):
             mm = re.search(r'מאשר\s*\[(RG-\d+)\]', txt)
             if mm: codes.append(mm.group(1)); vu.add(d['id'])
     st.write_text(json.dumps(sorted(vu)))
-    for c in dict.fromkeys(codes):
-        e = next((x for x in m['reels'] if x['code'] == c), None)
-        if not e or e.get('lien'): continue
-        lf = H / f'leg_{c}.txt'; lf.write_text(legende(e), encoding='utf-8')
-        if e['type'] == 'reel':
-            r = subprocess.run([sys.executable, str(IG / 'publier_reel.py'), f'uzi_{c}', e['complet'], str(lf)], capture_output=True, text=True, timeout=900, cwd=IG)
-            lien = (re.search(r'(/romain\.gary\.cafe\.bistro/reel/[^/\s]+/)', r.stdout) or [None, None])[1]
-        else:
-            r = subprocess.run([sys.executable, str(IG / 'publier_reel.py'), f'uzi_{c}', e['images'][0], str(lf)], capture_output=True, text=True, timeout=900, cwd=IG)
-            lien = (re.search(r'(/romain\.gary\.cafe\.bistro/(?:p|reel)/[^/\s]+/)', r.stdout) or [None, None])[1]
-        if not lien: log(f'publication {c} échouée : {r.stdout[-300:]} {r.stderr[-300:]}'); wa(DAVID, f'⚠️ Publication {c} échouée, je regarde.'); continue
-        p2 = subprocess.run([sys.executable, str(IG / 'poser_legende.py'), 'https://www.instagram.com' + lien, str(lf)], capture_output=True, text=True, timeout=600, cwd=IG)
-        e['lien'] = lien; e['legende_ok'] = 'LÉGENDE PRÉSENTE' in p2.stdout; save(m); build_page(m); log(f'publié {c} {lien} légende={e["legende_ok"]}')
-        wa(DAVID, f"✅ Publié sur Instagram · {c} · {e['titre']}" + ('' if e['legende_ok'] else ' (légende à revérifier)')); time.sleep(1)
-        wa(DAVID, 'https://www.instagram.com' + lien)
+    for c in dict.fromkeys(codes): publier(m, c, 'WhatsApp')
+
+def publier(m, c, source):
+    """Publie le livrable <c> (une seule fois), pose et relit la légende, prévient David. Renvoie le lien ou None."""
+    e = next((x for x in m['reels'] if x['code'] == c), None)
+    if not e: return None
+    if e.get('lien'): return e['lien']
+    lf = H / f'leg_{c}.txt'; lf.write_text(legende(e), encoding='utf-8')
+    f = e['complet'] if e['type'] == 'reel' else e['images'][0]
+    r = subprocess.run([sys.executable, str(IG / 'publier_reel.py'), f'uzi_{c}', f, str(lf)], capture_output=True, text=True, timeout=900, cwd=IG)
+    lien = (re.search(r'(/romain\.gary\.cafe\.bistro/(?:reel|p)/[^/\s]+/)', r.stdout) or [None, None])[1]
+    if not lien:
+        log(f'publication {c} échouée : {r.stdout[-300:]} {r.stderr[-300:]}'); wa(DAVID, f'⚠️ Publication {c} échouée ({source}), je regarde.'); return None
+    p2 = subprocess.run([sys.executable, str(IG / 'poser_legende.py'), 'https://www.instagram.com' + lien, str(lf)], capture_output=True, text=True, timeout=600, cwd=IG)
+    e['lien'] = lien; e['legende_ok'] = 'LÉGENDE PRÉSENTE' in p2.stdout; e['valide_par'] = source; save(m); build_page(m)
+    log(f'publié {c} {lien} légende={e["legende_ok"]} via {source}')
+    wa(DAVID, f"✅ Uzi a validé · publié sur Instagram · {c} · {e['titre']}" + ('' if e['legende_ok'] else ' (légende à revérifier)')); time.sleep(1)
+    wa(DAVID, 'https://www.instagram.com' + lien)
+    return lien
 
 if __name__ == '__main__':
     m = load()
