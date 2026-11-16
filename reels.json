@@ -76,6 +76,16 @@
    "legende": "ערב רגאיי ברומן גארי",
    "code": "RG-07",
    "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_he.ok"
+  },
+  {
+   "titre": "Reel reggae v2 (contrôleur DJ) — FR",
+   "langue": "fr",
+   "type": "reel",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_fr_9x16.mp4",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_fr_tel.mp4",
+   "legende": "Soirée reggae au Café Bistro Romain Gary : la voix, les platines et la salle qui danse. Hillel 35, Jérusalem.",
+   "code": "RG-08",
+   "marqueur": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus_v2/Reggae_v2_fr.ok"
   }
  ]
 }
