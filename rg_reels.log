@@ -1,3 +1,9 @@
 2026-11-16 17:59:49 ajouté RG-05 Cuisine · Le menu en 15 s
 2026-11-16 17:59:49 ajouté RG-06 Cuisine · Le menu en 15 s
 2026-11-16 17:59:49 ajouté RG-07 Reggae v2 · DJ et ambiance
+2026-11-16 18:13:20 publication RG-07 échouée :  
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dreamnova/Projects/02-clients/hok-breslev/video/publish_hok.py", line 805, in ig_upload
+    raise RuntimeError("SENT: confirmation de partage Instagram non observée")
+RuntimeError: SENT: confirmation de partage Instagram non observée
+
