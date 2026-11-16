@@ -1,0 +1,48 @@
+{
+ "reels": [
+  {
+   "code": "RG-01",
+   "titre": "Reggae",
+   "langue": "he",
+   "type": "reel",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_he_tel.mp4",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_RomainGary_he_9x16.mp4",
+   "legende": "ערב רגאיי ברומן גארי",
+   "marqueur": "initial",
+   "lien": "/romain.gary.cafe.bistro/reel/Dfzs0-_PmdO/",
+   "legende_ok": true
+  },
+  {
+   "code": "RG-02",
+   "titre": "Reggae",
+   "langue": "fr",
+   "type": "reel",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_fr_tel.mp4",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Reggae_RomainGary_fr_9x16.mp4",
+   "legende": "Retour sur la soirée reggae de samedi 🎶",
+   "marqueur": "initial"
+  },
+  {
+   "code": "RG-03",
+   "titre": "Cuisine",
+   "langue": "he",
+   "type": "reel",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_he_tel.mp4",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_RomainGary_he_9x16.mp4",
+   "legende": "מוגש חם, ישר מהמטבח לשולחן שלך. קפה ביסטרו רומן גארי, בתוך המכון הצרפתי",
+   "marqueur": "initial",
+   "lien": "/romain.gary.cafe.bistro/reel/Dfzsj7mPZbY/",
+   "legende_ok": true
+  },
+  {
+   "code": "RG-04",
+   "titre": "Cuisine",
+   "langue": "fr",
+   "type": "reel",
+   "tel": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_fr_tel.mp4",
+   "complet": "/Users/dreamnova/Projects/02-clients/romain-gary-institut/REGGAE_2026-11-14/rendus/Cuisine_RomainGary_fr_9x16.mp4",
+   "legende": "Servi chaud, de la cuisine à ta table.",
+   "marqueur": "initial"
+  }
+ ]
+}
