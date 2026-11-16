@@ -12,7 +12,7 @@ import json, os, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 H = Path(__file__).parent; MAN = H / 'reels.json'; RG = Path.home() / 'Projects/02-clients/romain-gary-institut'
 IG = RG / 'INSTAGRAM_2026-11-12'; LOG = H / 'rg_reels.log'
-SRC = [RG / 'REELS_CUISINE_2026-11-16', RG / 'REGGAE_2026-11-14/rendus_v2']
+SRC = [RG / 'REELS_CUISINE_2026-11-16']  # 16/11 : Uzi ne veut plus de reggae sur son fil → la source reggae est coupée
 UZI = {'152196528271428@lid'}; DAVID = '972584921492@s.whatsapp.net'; DAVID_JIDS = {DAVID, '149684039512207@lid'}
 URL = 'https://uzi.dreamnovamcp.com/oI1NZFp79eCet5JG/'  # page MCP : le bouton מאשר publie directement
 TAGS = {'he': '#ירושלים #כשר #ביסטרו #רומןגארי #אוכלכשר #מסעדהכשרה',
